@@ -1,0 +1,4 @@
+(()=>{const el=document.getElementById('preloader');if(!el)return;const bar=el.querySelector('.pl-bar i'),pct=el.querySelector('.pl-pct');let p=0,loaded=document.readyState==='complete',min=false,closed=false;
+setTimeout(()=>{min=true;},1500);addEventListener('load',()=>{loaded=true;});
+const tick=setInterval(()=>{const target=(loaded&&min)?100:Math.min(p+Math.random()*7+2,92);p=Math.max(p,target);p=Math.min(100,p+(loaded&&min?18:0));bar.style.width=p+'%';pct.textContent=Math.round(p)+'%';if(p>=100&&!closed){closed=true;clearInterval(tick);setTimeout(()=>{el.classList.add('done');document.body.classList.add('ready');setTimeout(()=>el.remove(),1000);},250);}},90);
+setTimeout(()=>{if(!closed){closed=true;el.classList.add('done');document.body.classList.add('ready');setTimeout(()=>el.remove(),1000);}},6000);})();

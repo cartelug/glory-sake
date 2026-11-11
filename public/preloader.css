@@ -1,0 +1,19 @@
+#preloader{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#1b1250 0,#0b0d14 60%);color:#fff;transition:opacity .7s ease,visibility .7s ease,transform .9s cubic-bezier(.7,0,.2,1)}
+#preloader.done{opacity:0;visibility:hidden;transform:scale(1.08)}
+#preloader .pl-core{position:relative;width:150px;height:150px;display:grid;place-items:center}
+#preloader .pl-ring{position:absolute;inset:0;border-radius:50%;border:2px solid transparent;border-top-color:#ab98f9;border-right-color:#5eead4;animation:pl-spin 1.2s linear infinite}
+#preloader .pl-ring.r2{inset:14px;border-top-color:#a3e635;border-right-color:transparent;border-left-color:#7c5ce9;animation-duration:1.8s;animation-direction:reverse}
+#preloader .pl-ring.r3{inset:28px;border-top-color:#f9a8d4;animation-duration:2.6s}
+#preloader img{width:46px;height:46px;object-fit:contain;animation:pl-pulse 1.4s ease-in-out infinite}
+#preloader .pl-word{margin-top:34px;font:700 22px/1 Brighter,Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase;display:flex;gap:2px;justify-content:center}
+#preloader .pl-word span{opacity:0;transform:translateY(14px);animation:pl-letter .6s cubic-bezier(.2,.8,.2,1) forwards}
+#preloader .pl-bar{margin:22px auto 0;width:210px;height:3px;border-radius:9px;background:#ffffff1f;overflow:hidden}
+#preloader .pl-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#7c5ce9,#5eead4,#a3e635);border-radius:9px;transition:width .25s ease}
+#preloader .pl-pct{margin-top:12px;text-align:center;font:700 12px Brighter,Arial,sans-serif;letter-spacing:.2em;color:#a6a4b2}
+#preloader .pl-tag{text-align:center;margin-top:8px;font-size:12px;color:#8a88a0;letter-spacing:.08em}
+#preloader .pl-spark{position:absolute;width:6px;height:6px;border-radius:50%;background:#ab98f9;opacity:0;animation:pl-float 3s ease-in-out infinite}
+@keyframes pl-spin{to{transform:rotate(360deg)}}
+@keyframes pl-pulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 0 #ab98f900)}50%{transform:scale(1.18);filter:drop-shadow(0 0 18px #ab98f9)}}
+@keyframes pl-letter{to{opacity:1;transform:none}}
+@keyframes pl-float{0%{opacity:0;transform:translateY(40px)}30%{opacity:.9}100%{opacity:0;transform:translateY(-140px)}}
+@media (prefers-reduced-motion:reduce){#preloader *{animation-duration:.01s!important}}
