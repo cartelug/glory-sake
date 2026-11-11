@@ -1,0 +1,132 @@
+[
+  {
+    "file": "assets/img/people-1-desktop.webp",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 184432,
+    "quality": 80,
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "0a27ac1f46fc604cd92cd697a41474a6001f6050cb4bc0ac070f8e146302cf6a",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Landscape 16:9. The woman in the reference wearing her charcoal patterned cardigan is sitting sideways at a small table on the shaded veranda of a modest contemporary Kampala cafe on an overcast morning. She has paused between scrolling and listening: phone held low in one hand, chin slightly lowered, eyes looking to a friend just outside frame, lips relaxed in a tiny incomplete smile, not looking at the camera. Three-quarter view with her real face recognisable. A plain cup and folded notebook on the table; simple chairs, plaster wall and leafy street in the middle distance. A real everyday place, understated and unstyled. Woman occupies right third, left half is the quiet shaded veranda wall with room for website copy. One plausible hand with normal fingers; the other rests naturally on the table. Do not add decorative objects or manufactured imperfections. Let the moment feel like a casual photo taken by a friend before she noticed."
+  },
+  {
+    "file": "assets/img/people-1-mobile.webp",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 189758,
+    "quality": 80,
+    "source_dimensions": [
+      941,
+      1672
+    ],
+    "sha256": "8cae8949b301a3c1b67d45c0bfd08cec6f0525473d9516709f6f907cde5b66e6",
+    "prompt": "Recompose this exact cafe moment as one portrait 9:16 photo for mobile, 1080x1920. Preserve this woman's own face, braids, cardigan, skin texture, the same neutral daylight, quiet expression, cup, notebook and believable cafe. The subject should occupy the lower 55%, with top 35-40% being the actual simple plaster veranda wall, uncluttered for website text. No dark gradient baked into photo. Keep phone and hands natural, no new objects or new people. Natural moderately deep focus; no cinematic or beauty treatment. This is a new vertical framing of the same scene, not a collage."
+  },
+  {
+    "file": "assets/img/people-2-desktop.webp",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 183248,
+    "quality": 80,
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "2022b5e7a01c97aa816800dd1cf3c84be2708f13aaa9273609b91c8385bba272",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Landscape 16:9. Ordinary late morning inside a parked Kampala commuter minibus. The man from reference C wears the same plain black T-shirt, his beard and short textured hair unchanged. Seated at an open window, he is checking his phone held low near his lap, eyes down, expression quietly concentrated, shoulders relaxed. No smile for camera. Blue seat upholstery, dull window metal, an ordinary street visible outside with moderate focus. Daylight through window only, no screen glow on face. Backpack beside him. Frame from aisle at seated eye level, man on left half with quiet seats and window space to right for web cards. Do not turn scene into travel advert or add dramatic grit. No fake candid blur."
+  },
+  {
+    "file": "assets/img/people-2-mobile.webp",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 186346,
+    "quality": 80,
+    "source_dimensions": [
+      941,
+      1672
+    ],
+    "sha256": "e049ab4b6b6c2aefecf3ec05ad8464f99bf2a85d16dd2c432e4ddb405ddd3612",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Reframe the supplied selected desktop scene, keeping original portrait likeness as identity anchor. Vertical 9:16 mobile photo. Move camera back just enough to show the same man in the middle/lower portion with his phone near his lap and his backpack beside him. Show credible minibus ceiling, seat back and window above and around him; keep recognisable street outside. Do not invent an oversized roof or distort windows to create headline space. Keep crucial detail away from outer 8% edges. No text or dark fade. One complete vertical photograph, not a collage."
+  },
+  {
+    "file": "assets/img/people-3-desktop.webp",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 86486,
+    "quality": 80,
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "2b7d426dae1012a8c15ca5d605092248df4717a45294b98661bf96d25ba2959e",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Landscape 16:9. Woman from reference B at an ordinary small desk beside an open window in a Kampala apartment in the afternoon. Same pulled-back braids, grey T-shirt and natural face, now wearing plain charcoal trousers. She is pausing while making a note in a notebook, pen lightly in right hand; her other hand simply rests on page, a phone face down next to it. Eyes on her note, mouth neutral, slightly uneven seated posture. A shelf with a few unlabelled books, cream wall, curtain, everyday desk. Soft overcast window light only. Compose woman on right third with open left wall and desk for website three-step cards. Recognisable real room in moderately deep focus. No styling props or brand colour accessories."
+  },
+  {
+    "file": "assets/img/people-3-mobile.webp",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 125954,
+    "quality": 80,
+    "source_dimensions": [
+      941,
+      1672
+    ],
+    "sha256": "690f4376641b19d6af8e247926c4819a8310a5e707456cc79013526d7b84d0b6",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Reframe the supplied selected desktop scene, keeping original portrait likeness as identity anchor. Vertical 9:16 mobile photo. Keep the same woman in the lower half at her desk, writing in the notebook. The phone stays face down. Include a plausible amount of cream wall, window edge and shelf above; keep architectural geometry and actual shelf supports sensible. Preserve face, hairstyle and outfit. No change in daylight. Keep crucial detail away from outer 8% edges. No text or dark fade. One complete vertical photograph, not a collage."
+  },
+  {
+    "file": "assets/img/people-4-desktop.webp",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 250418,
+    "quality": 80,
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "da690181b7482338873d964729ab385bf57d800b6ca2d9e494f3e581ac38d24b",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Landscape 16:9. The three supplied reference people together at a simple Kampala cafe table in open shade on an overcast afternoon. A is the woman with braided bun and charcoal patterned cardigan, B is the woman with pulled-back braids and grey T-shirt, C is the man with short textured hair, beard and black T-shirt. Each retains their own distinct face, hairstyle and proportions, no face blending. B leans slightly to see a phone that A holds low beside a cup; C is listening and glancing across to B with a small incomplete smile. The moment is quiet and conversational, nobody laughing for camera or pointing theatrically. Three natural separate seated postures, hands kept simple and unobstructed. One plain cup per person, a closed notebook, ordinary shaded patio with useful depth and recognisable local street beyond. Shoot from the end of table, eye level, subjects in centre-right; left third quiet wall. No matching outfits, no glamour, no staged stock photograph."
+  },
+  {
+    "file": "assets/img/people-4-mobile.webp",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 272028,
+    "quality": 80,
+    "source_dimensions": [
+      941,
+      1672
+    ],
+    "sha256": "3d0a2a06882bd593abf56a8a6075dd3defac3bd8475447c2efd28163b6036517",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Reframe the selected desktop scene, using original portraits as identity anchors. Vertical 9:16 mobile photo, tighter view of the same three friends at the cafe table. All three faces must be fully visible and reasonably sized; no one cut out. Preserve each distinct face and outfit from originals. Allow natural depth in the seating arrangement, with man C left, B near centre, A right. Woman A still holds phone low, B looks at it and C listens. Plain cups and closed notebook. Include a little of the actual patio roof and street above. Do not invent a wall floating over their heads. No forced large empty area if it compromises believable seating. Keep important detail within 8% side margins. One complete vertical photograph."
+  },
+  {
+    "file": "assets/img/people-5-desktop.webp",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 105018,
+    "quality": 80,
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "96482f181d63fcef50d635d0603a45705e0714e19352363bd4fc1e76aff1301c",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Landscape 16:9. Early evening before it is dark on a simple Kampala home veranda. The man from C with his original face, beard, short hair and plain black T-shirt sits in the left third, phone resting face down on his thigh, eyes on someone just outside frame to his right. Expression neutral and relaxed, no smile aimed at camera. A simple chair and railing, unembellished plaster wall, ordinary greenery and houses beyond. Soft remaining daylight, slightly lower exposure than afternoon but no neon blue colour cast, no decorative lights or cinematic glow. Composition leaves right half as quiet veranda wall and recognisable dim surroundings for call-to-action copy. Natural seated posture, credible hands, moderate focus."
+  },
+  {
+    "file": "assets/img/people-5-mobile.webp",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 135912,
+    "quality": 80,
+    "source_dimensions": [
+      941,
+      1672
+    ],
+    "sha256": "56c8083c8b8fcff1b70783bf8433ea759bf7d39e1e9bafb10c533807ab1ab5a8",
+    "prompt": "Make an ordinary, believable candid photograph, not an advertising portrait. Preserve the exact person's facial structure, skin tone, hairline, hairstyle and natural proportions from the supplied reference. Reference controls likeness only: change pose and gaze to suit the scene. Existing daylight only, neutral white balance, natural contrast, moderately deep focus with recognisable background, plain real-world colours. Skin has subtle unevenness and normal shine, hair and clothes have ordinary fine detail; no beauty retouching. Observational eye-level camera, 35mm lens at f/5.6, relaxed unplanned framing. No cinematic grade, golden glow, volumetric light, neon, faux film damage, artificially blurred foreground, glamour styling or exaggerated smiles. No text, logos, visible screen content or earnings claims. One photo, no panels. Reframe the selected desktop scene, using original portraits as identity anchors. Vertical 9:16 mobile photo of the same man on the veranda, seated naturally with face in upper-middle third, relaxed hands and face-down phone on thigh. Keep actual plaster wall, railing and normal early-evening daylight. Lower third is simply natural floor and quiet chair area, no artificial gradient. No new lights or objects. Keep important detail within 8% side margins. One complete vertical photograph."
+  }
+]

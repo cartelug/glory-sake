@@ -19,3 +19,19 @@ Editorial illustration in a photographic style: three adult East African friends
 ### Social preview / favicon
 
 Social preview composes the hero with live brand typography. Favicon uses the supplied white mark on midnight. These are deterministic derivatives rather than newly generated logos.
+
+## Fresh candid photography (11 November 2026)
+
+Five scenes, each with a desktop (1920x1080) and mobile (1080x1920) WebP in `assets/img/`, generated with the built-in image-generation tool. They replace the abstract hero art and the golden-hour cafe image on the public home page:
+
+| File pair | Used for |
+|---|---|
+| `people-1-*` | Home hero background |
+| `people-2-*` | Activities section |
+| `people-3-*` | Three steps section |
+| `people-4-*` | Community section |
+| `people-5-*` | Final call-to-action background |
+
+Photos are unaltered; dark gradients are applied in CSS. They are illustrative and are labelled "Illustrative image" on the site. They do not depict members and are not testimonials. Prompts, hashes, dimensions and the visual review are in `docs/photography/`. The 10 full-size PNG masters and the supplied reference portraits are intentionally not committed.
+
+`hero.webp` and `hero-mobile.webp` remain in use on the sign-in panel and wallet card.
