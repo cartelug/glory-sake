@@ -51,6 +51,6 @@ export function bindPay({api,toast,staticMode}){
     if(e.target.id!=='pay-form')return;e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f)),st=document.getElementById('pay-status');
     if(!/^\d{3,9}$/.test(String(d.amount).replace(/[,\s]/g,''))||String(d.txid).trim().length<6||!String(d.who).trim()){st.textContent='Please complete every field with valid details.';return;}
     if(staticMode){st.textContent='The preview site cannot receive payment confirmations. Please contact support through the live service.';return;}
-    try{const r=await api('support',{name:'Payment confirmation',email:/@/.test(d.who)?d.who:'payments@invalid.local',subject:'Payment confirmation',message:`Network: ${d.network}\nAmount: UGX ${d.amount}\nTransaction ID: ${d.txid}\nContact: ${d.who}`});st.textContent=`Received. Reference ${r.id}. We will confirm after verifying the Transaction ID.`;f.reset();}catch(err){st.textContent=err.message;}
+    try{const r=await api('support',{name:'Payment confirmation',email:/@/.test(d.who)?d.who:'payments@invalid.local',subject:'Payment confirmation',message:`Network: ${d.network}\nAmount: UGX ${d.amount}\nTransaction ID: ${d.txid}\nContact: ${d.who}`});st.textContent=`Received. Reference ${r.id}. We will confirm after verifying the Transaction ID.`;f.reset();dispatchEvent(new Event('fx:confetti'));}catch(err){st.textContent=err.message;}
   });
 }
