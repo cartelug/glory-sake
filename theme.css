@@ -243,10 +243,6 @@ h1{font-size:clamp(38px,5.6vw,80px)}h2{font-size:clamp(30px,3.6vw,52px)}h3{font-
 /* fresh candid photography (people-1..5); photos are unaltered, overlays are CSS only */
 .hero-x .hero-bg{background-image:linear-gradient(90deg,rgba(11,13,20,.78) 0,rgba(11,13,20,.25) 55%,rgba(11,13,20,0) 100%),url('./assets/img/people-1-desktop.webp');background-position:center;opacity:1;mix-blend-mode:normal}
 .photo-note{font-size:12px;letter-spacing:.04em;opacity:.7}
-.photo-band{position:relative;margin:48px 0 0;border-radius:20px;overflow:hidden;aspect-ratio:21/9;background:#1a1236}
-.photo-band picture,.photo-band img{display:block;width:100%;height:100%}
-.photo-band img{object-fit:cover;object-position:center 40%}
-.photo-band figcaption{position:absolute;right:14px;bottom:12px;font-size:12px;color:#fff;background:rgba(11,13,20,.55);padding:4px 10px;border-radius:99px}
 .community-image{background-image:url('./assets/img/people-4-desktop.webp');background-position:50% center}
 .cta-photo{display:block;position:absolute;inset:0;z-index:0}
 .cta-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
@@ -255,7 +251,6 @@ h1{font-size:clamp(38px,5.6vw,80px)}h2{font-size:clamp(30px,3.6vw,52px)}h3{font-
 @media(max-width:560px){
 .hero-x .hero-bg{background-image:linear-gradient(180deg,rgba(11,13,20,.82) 0,rgba(11,13,20,.6) 50%,rgba(11,13,20,.1) 85%,rgba(11,13,20,0) 100%),url('./assets/img/people-1-mobile.webp');background-position:center bottom}
 .community-image{background-image:url('./assets/img/people-4-mobile.webp');min-height:480px;background-position:center}
-.photo-band{aspect-ratio:4/5;border-radius:16px;margin-top:32px}
 }
 
 /* MTN and Airtel branding (logos from each network's own website) */
