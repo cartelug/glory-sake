@@ -2,7 +2,7 @@
 
 ## Owner-provided assets
 
-`logo-white.png`, `logo-dark.png`, `MTNBrighterSans-Bold.ttf`, `SkyText-Regular.ttf`, and `SkyText-Light.ttf` were extracted from the user-provided GLORYSAKE Ultimate Website Masterplan 2026 PDF. Mark silhouette and proportions are preserved, with transparent whitespace trimmed. Fonts are the embedded subsets supplied in that document; obtain full licensed webfont files before extending the character set or localizing into additional languages.
+`logo-white.png`, `logo-dark.png`, `assets/fonts/` (Brighter Sans Bold; Sky Text Light, Regular, Bold; CC BY 4.0, credit in the site footer) were extracted from the user-provided GLORYSAKE Ultimate Website Masterplan 2026 PDF. Mark silhouette and proportions are preserved, with transparent whitespace trimmed. Fonts are the embedded subsets supplied in that document; obtain full licensed webfont files before extending the character set or localizing into additional languages.
 
 ## Custom generated artwork
 

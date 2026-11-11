@@ -37,7 +37,7 @@ body.dark-site .public-header.scrolled{background:#0b0d14cc;backdrop-filter:blur
 .scroll-cue{animation:cue 1.8s ease-in-out infinite}
 /* marquee */
 .marquee{overflow:hidden;border-block:1px solid #ffffff14;background:#0f111b;padding:18px 0}
-.marquee-track{display:flex;gap:44px;width:max-content;animation:marquee 32s linear infinite;font:700 14px Brighter,Arial;letter-spacing:.12em;text-transform:uppercase;color:#bdbbd0}
+.marquee-track{display:flex;gap:44px;width:max-content;animation:marquee 32s linear infinite;font:700 14px Sky,Arial;letter-spacing:.12em;text-transform:uppercase;color:#bdbbd0}
 .marquee-track span{display:inline-flex;align-items:center;gap:12px;white-space:nowrap}.marquee-track .icon{color:#5eead4}
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:70px 0 0}
@@ -82,7 +82,7 @@ body.dark-site option{color:#000}
 .pay-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start;padding-top:40px}
 .pay-card{border:1px solid var(--glass-line);background:var(--glass);border-radius:26px;padding:28px}
 .pay-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#00000040;padding:6px;border-radius:14px;margin-bottom:22px}
-.pay-tabs button{border:0;background:transparent;color:#bdbbd0;padding:14px;border-radius:10px;font:700 15px Brighter,Arial;display:flex;gap:10px;align-items:center;justify-content:center;transition:background .25s,color .25s}
+.pay-tabs button{border:0;background:transparent;color:#bdbbd0;padding:14px;border-radius:10px;font:700 15px Sky,Arial;display:flex;gap:10px;align-items:center;justify-content:center;transition:background .25s,color .25s}
 .pay-tabs button.active{background:#fff;color:#0b0d14}
 .dot{width:10px;height:10px;border-radius:50%}.dot.mtn{background:#ffcb05}.dot.airtel{background:#e40000}
 .pay-code{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#00000038;border:1px dashed #ffffff40;border-radius:16px;padding:18px 22px;margin-bottom:12px}
@@ -91,7 +91,7 @@ body.dark-site option{color:#000}
 .copy{border:1px solid var(--glass-line);background:#ffffff14;color:#fff;border-radius:10px;padding:10px 16px;font-weight:700;white-space:nowrap}.copy:hover{background:#ffffff26}
 .pay-steps{list-style:none;margin:22px 0;padding:0;display:grid;gap:14px;counter-reset:s}
 .pay-steps li{display:flex;gap:16px;align-items:flex-start;opacity:0;transform:translateX(-14px);animation:slidein .5s calc(var(--i)*.08s) forwards}
-.pay-steps li>span{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#0b0d14;font:700 15px Brighter,Arial}
+.pay-steps li>span{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#0b0d14;font:700 15px Sky,Arial}
 .pay-steps h4{margin:0 0 2px;font-size:17px;color:#fff}.pay-steps p{color:#a9a7bb;font-size:15px}.ussd{color:#5eead4}
 .pay-side{display:grid;gap:18px;position:sticky;top:96px}
 .pay-side .panel{padding:26px}.pay-side ul{margin:12px 0 0;padding-left:18px;color:#a9a7bb;line-height:1.9}
@@ -126,7 +126,7 @@ img,canvas,svg{max-width:100%}
 @keyframes routego{0%{transform:scaleX(0);opacity:1}70%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
 #app.page-in{animation:pagein .6s cubic-bezier(.2,.7,.2,1)}
 @keyframes pagein{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-#totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--glass-line);background:#7c5ce9;color:#fff;font:700 20px Brighter,Arial;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:.35s;box-shadow:0 10px 30px -8px #7c5ce9}
+#totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--glass-line);background:#7c5ce9;color:#fff;font:700 20px Sky,Arial;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:.35s;box-shadow:0 10px 30px -8px #7c5ce9}
 #totop.show{opacity:1;transform:none;pointer-events:auto}#totop:hover{transform:translateY(-4px)}
 .cursor-glow{position:fixed;top:0;left:0;width:400px;height:400px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(circle,#7c5ce933,transparent 65%);opacity:0;transition:opacity .4s;mix-blend-mode:screen}
 #confetti{position:fixed;inset:0;z-index:10002;pointer-events:none}
@@ -225,3 +225,17 @@ body.dark-site select{background-color:#1b1d2a;color:#fff}
 .motion-off [data-reveal]{opacity:1;transform:none}
 .motion-off .hero-fx,.motion-off .cursor-glow{display:none}
 .motion-off .marquee-track{animation:none}
+/* ===== v5: typography. Brighter Sans Bold = big bold headings. Sky Text (300/400/700) = body, UI, numbers ===== */
+:root{--display:Brighter,Sky,Arial,sans-serif}
+h1,h2,h3,.brand,.btn,.pl-word{font-family:var(--display);font-weight:700}
+h4,strong,b,.eyebrow,.pill,.chip,.step-no,.stat strong,.net strong,.pay-code strong,.copy,.pay-tabs button,.pay-steps li>span,#totop,.marquee-track,.pl-pct{font-family:Sky,Arial,sans-serif;font-weight:700}
+body{font-weight:400}
+.hero-x p,.page-hero p,.intro-copy p:first-child{font-weight:300;font-size:clamp(17px,1.5vw,21px)}
+.muted,.fineprint,.feat p,.task-card p,.steps-grid p,.faqs p{font-weight:300}
+.fineprint{font-size:13px}
+.eyebrow,.pill{font-size:12px;letter-spacing:.14em}
+h1{font-size:clamp(38px,5.6vw,80px)}h2{font-size:clamp(30px,3.6vw,52px)}h3{font-size:clamp(20px,1.8vw,26px)}
+.hero-x h1{font-size:clamp(42px,7vw,100px);max-width:15ch}
+.brand{font-size:26px}
+.font-credit a{text-decoration:underline}
+@media (max-width:560px){.hero-x h1{font-size:clamp(38px,11.5vw,52px)}h2{font-size:clamp(28px,8vw,36px)}}
