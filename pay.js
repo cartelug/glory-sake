@@ -28,13 +28,16 @@ const steps={
 };
 export function payPage({nav,footer,icon,staticMode}){
   const panel=(k)=>{const c=PAY_CONFIG[k];return `<div class="pay-panel" role="tabpanel" id="panel-${k}" aria-labelledby="tab-${k}" data-panel="${k}" ${k==='airtel'?'hidden':''}>
+  <div class="pay-brand ${k}"><img src="./assets/${k}-logo.svg" alt="" width="${k==='mtn'?96:120}" height="${k==='mtn'?48:31}" decoding="async"><div><small>PAY WITH</small><strong>${c.name}</strong></div></div>
+
   <div class="pay-code"><div><small>DIAL</small><strong>${c.ussd}</strong></div><button class="copy" data-copy="${c.ussd}" type="button">Copy code</button></div>
   <div class="pay-code"><div><small>MERCHANT CODE <em class="draft">DRAFT</em></small><strong>${c.merchantCode||'Issued at launch'}</strong></div>${c.merchantCode?`<button class="copy" data-copy="${c.merchantCode}" type="button">Copy</button>`:''}</div>
   <ol class="pay-steps">${steps[k].map(([h,p],i)=>`<li style="--i:${i}"><span>${i+1}</span><div><h4>${h}</h4><p>${p}</p></div></li>`).join('')}</ol></div>`;};
   return `${nav()}<main id="main"><section class="page-hero"><div class="wrap"><span class="pill"><i></i> MOBILE MONEY</span><h1>Pay in<br><em>under a minute.</em></h1><p>Use MTN Mobile Money or Airtel Money. Follow the steps, keep your Transaction ID, then confirm it below.</p></div></section>
   <section class="section wrap pay-grid"><div class="pay-card" data-reveal>
-    <div class="pay-tabs" role="tablist" aria-label="Payment network"><button role="tab" id="tab-mtn" aria-controls="panel-mtn" class="active" data-tab="mtn" aria-selected="true"><i class="dot mtn"></i> MTN MoMo</button><button role="tab" id="tab-airtel" aria-controls="panel-airtel" tabindex="-1" data-tab="airtel" aria-selected="false"><i class="dot airtel"></i> Airtel Money</button></div>
+    <div class="pay-tabs" role="tablist" aria-label="Payment network"><button role="tab" id="tab-mtn" aria-controls="panel-mtn" class="active" data-tab="mtn" aria-selected="true"><i class="net-chip mtn"><img src="./assets/mtn-logo.svg" alt="" width="56" height="28" decoding="async"></i> MTN MoMo</button><button role="tab" id="tab-airtel" aria-controls="panel-airtel" tabindex="-1" data-tab="airtel" aria-selected="false"><i class="net-chip airtel"><img src="./assets/airtel-logo.svg" alt="" width="68" height="18" decoding="async"></i> Airtel Money</button></div>
     ${panel('mtn')}${panel('airtel')}
+    <p class="fineprint tm-note">MTN, MTN MoMo and Airtel Money names and logos are trademarks of their respective owners and are shown only to identify the payment network. Glorysake is not affiliated with or endorsed by MTN or Airtel.</p>
     <div class="notice warn">Draft instructions. The merchant code and any fee are not final until the operator publishes them. Only pay to a code shown on this official page, and never pay anyone who asks you to send money to a personal number.</div>
   </div>
   <aside class="pay-side" data-reveal><div class="panel"><h3>I have paid</h3><p class="muted">Send your Transaction ID so the payment can be matched and confirmed manually.</p>

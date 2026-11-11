@@ -35,3 +35,7 @@ Five scenes, each with a desktop (1920x1080) and mobile (1080x1920) WebP in `ass
 Photos are unaltered; dark gradients are applied in CSS. They are illustrative and are labelled "Illustrative image" on the site. They do not depict members and are not testimonials. Prompts, hashes, dimensions and the visual review are in `docs/photography/`. The 10 full-size PNG masters and the supplied reference portraits are intentionally not committed.
 
 `hero.webp` and `hero-mobile.webp` remain in use on the sign-in panel and wallet card.
+
+## MTN and Airtel logos
+
+`assets/mtn-logo.svg` and `assets/airtel-logo.svg` were taken from each network's own Uganda website (mtn.co.ug and airtel.co.ug) on 11 November 2026. They are the parent-brand logos, not the separate MTN MoMo or Airtel Money product marks. They are trademarks of their owners, shown only to identify the payment network and not as an endorsement. Before live payments launch, request the approved MoMo and Airtel Money logo files and brand guidelines from each operator and replace these files if required.
