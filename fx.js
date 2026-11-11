@@ -1,6 +1,6 @@
 // Visual effects layer. Pure enhancement: the site works without it.
 (()=>{
-const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches||document.documentElement.classList.contains('motion-off');
 const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
 const mk=(tag,id,cls)=>{const e=document.createElement(tag);if(id)e.id=id;if(cls)e.className=cls;document.body.appendChild(e);return e;};
 const bar=mk('div','scrollbar'),route=mk('div','routebar'),top=mk('button','totop');top.type='button';top.setAttribute('aria-label','Back to top');top.textContent='↑';
@@ -13,6 +13,10 @@ addEventListener('resize',hdr);top.addEventListener('click',()=>scrollTo({top:0,
 /* cursor glow + magnetic buttons */
 if(glow){addEventListener('pointermove',e=>{glow.style.transform=`translate(${e.clientX-200}px,${e.clientY-200}px)`;glow.style.opacity=1;},{passive:true});document.addEventListener('mouseleave',()=>glow.style.opacity=0);
 document.addEventListener('pointermove',e=>{const b=e.target.closest&&e.target.closest('.btn.primary,.btn.light');document.querySelectorAll('.btn.mag').forEach(x=>{if(x!==b){x.style.translate='';x.classList.remove('mag');}});if(b){const r=b.getBoundingClientRect();b.classList.add('mag');b.style.translate=`${(e.clientX-r.left-r.width/2)*.18}px ${(e.clientY-r.top-r.height/2)*.28}px`;}},{passive:true});}
+/* motion toggle (WCAG 2.2.2): pauses all looping effects */
+try{if(localStorage.getItem('gs-motion')==='off')document.documentElement.classList.add('motion-off');}catch{}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-motion]');if(!b)return;const off=document.documentElement.classList.toggle('motion-off');try{localStorage.setItem('gs-motion',off?'off':'on');}catch{}b.setAttribute('aria-pressed',off);b.textContent=off?'Resume animations':'Pause animations';});
+new MutationObserver(()=>{const b=document.querySelector('[data-motion]');if(b&&document.documentElement.classList.contains('motion-off')){b.setAttribute('aria-pressed','true');b.textContent='Resume animations';}}).observe(document.getElementById('app'),{childList:true});
 /* ripple */
 document.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('.btn,.copy,.pay-tabs button');if(!b||reduce)return;const r=b.getBoundingClientRect(),s=document.createElement('i');s.className='ripple';const d=Math.max(r.width,r.height)*2;s.style.cssText=`width:${d}px;height:${d}px;left:${e.clientX-r.left-d/2}px;top:${e.clientY-r.top-d/2}px`;b.classList.add('has-ripple');b.appendChild(s);setTimeout(()=>s.remove(),700);});
 /* route change loader */
