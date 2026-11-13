@@ -1,0 +1,431 @@
+[
+  {
+    "route": "/",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Make thein-betweenminutes count.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Make thein-betweenminutes count.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Make thein-betweenminutes count.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Make thein-betweenminutes count.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Hey, Alex.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Hey, Alex.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Hey, Alex.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Hey, Alex.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/tasks",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Find your next little challenge.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Find your next little challenge.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Find your next little challenge.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Find your next little challenge.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/achievements",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Small wins. Lasting glow.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Small wins. Lasting glow.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Small wins. Lasting glow.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Small wins. Lasting glow.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/leaderboard",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "A little shared momentum.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "A little shared momentum.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "A little shared momentum.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "A little shared momentum.",
+        "scroll": 1366,
+        "viewport": 1366
+      }
+    ]
+  },
+  {
+    "route": "/notifications",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Your notifications",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Your notifications",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Your notifications",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Your notifications",
+        "scroll": 1366,
+        "viewport": 1366
+      }
+    ]
+  },
+  {
+    "route": "/wallet",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Your wallet, explained.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Your wallet, explained.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Your wallet, explained.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Your wallet, explained.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/learning",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Small lessons. Useful for life.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Small lessons. Useful for life.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Small lessons. Useful for life.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Small lessons. Useful for life.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/messages",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "A good place to ask.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "A good place to ask.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "A good place to ask.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "A good place to ask.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/settings",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Make yourself at home.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Make yourself at home.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Make yourself at home.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Make yourself at home.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/security",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Your account. Your control.",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Your account. Your control.",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Your account. Your control.",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Your account. Your control.",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/pay",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "How to pay",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "How to pay",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "How to pay",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "How to pay",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  },
+  {
+    "route": "/support",
+    "checks": [
+      {
+        "width": 360,
+        "broken": [],
+        "heading": "Help center",
+        "scroll": 345,
+        "viewport": 345
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "heading": "Help center",
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "width": 768,
+        "broken": [],
+        "heading": "Help center",
+        "scroll": 753,
+        "viewport": 753
+      },
+      {
+        "width": 1366,
+        "broken": [],
+        "heading": "Help center",
+        "scroll": 1351,
+        "viewport": 1351
+      }
+    ]
+  }
+]

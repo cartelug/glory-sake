@@ -19,6 +19,14 @@ npm run build
 
 `npm run build` produces a portable static site in `dist/`. The public website and device-local practice demo work on static hosting, including a GitHub Pages project path. Account creation, login, support delivery and operator functions require the Node server. Static hosting does not create a server or a payment service.
 
+## Dusk upgrade — 13 November 2026
+
+The public site now uses **25 illustrated assets**: six section backgrounds, eight activity glyphs, five level crests and six badges. The production WebPs total about 2.49 MiB; the existing fonts and star-and-bird mark are preserved.
+
+The practice experience includes eleven activities, daily check-ins and a weekly freeze, five levels, sixteen achievements, three daily goals, an optional nickname board, notifications and a replayable tour. Practice points and virtual wallet samples are separate and have no cash value. Added account controls include session visibility, password changes and logout everywhere. Help search, support references, receipt records, wallet filters and offline shell support are included. Public navigation, selected headings and payment-step labels have English, Luganda and Kiswahili options; this is an initial translation pass.
+
+Validation: **41 automated tests**, a successful static build, and **52 browser layout checks** over thirteen screens at 360, 390, 768 and 1366 pixels. Details and remaining production boundaries are in [the release notes](docs/DUSK-RELEASE.md).
+
 ## Included
 
 - Public home, how it works, activity explorer, trust, access/availability, partner enquiries, help center and preview legal notices.

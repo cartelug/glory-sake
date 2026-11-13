@@ -1,0 +1,4 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
+const manifest=JSON.parse(await readFile(new URL('../assets/visual-manifest.json',import.meta.url),'utf8'));
+test('the release includes 25 distinct production visuals, including six backgrounds',()=>{assert.equal(manifest.assets.length,25);assert.equal(new Set(manifest.assets.map(a=>a.production_path)).size,25);assert.equal(manifest.assets.filter(a=>a.production_path.startsWith('assets/backgrounds/')).length,6);});
+test('every declared production image exists and contains valid WebP bytes',async()=>{for(const asset of manifest.assets){const bytes=await readFile(new URL('../'+asset.production_path,import.meta.url));assert.equal(bytes.toString('ascii',0,4),'RIFF',asset.production_path);assert.equal(bytes.toString('ascii',8,12),'WEBP',asset.production_path);assert.ok(bytes.length>100,asset.production_path);}});

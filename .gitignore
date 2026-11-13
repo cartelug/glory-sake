@@ -3,3 +3,9 @@ data/
 dist/
 .env
 *.log
+
+# Generated PNG masters are local; production WebPs are versioned.
+assets/backgrounds/*.png
+assets/glyphs/*.png
+assets/levels/*.png
+assets/badges/*.png
