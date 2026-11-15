@@ -2,6 +2,18 @@
 
 A complete responsive public website and interactive member experience built from the owner's November 2026 masterplan. Original star-and-bird mark and embedded Brighter Sans / Sky Text fonts are preserved. Custom generated hero and community images are optimized and included locally; no external image or font requests are needed.
 
+## Hosted account edition — published 15 November 2026
+
+**Owner-private working site:** https://glorysake-live.woodsydegu512.chatgpt.site
+
+The hosted edition now runs the account API with a persistent D1 database and platform-managed ChatGPT sign-in. It supports profiles, saved practice submissions, operator reviews/appeals, support conversations, invitations and account data controls. Sign in with the account that owns the Site and explicitly finish the Glorysake profile setup. No production profile was created or terms accepted automatically.
+
+The deployment succeeded; its health endpoint returned HTTP 200 with `database: connected`, and the live 13-table schema, frontend module and font asset were verified. The browser showed the expected private sign-in gate; an authenticated production member walkthrough still needs the owner to sign in. Public access, `glorysake.com` DNS and live cash processing have not been enabled.
+
+The original Node edition retains email/password sign-in. The frontend chooses the correct controls from the backend's `authMode`; its accounts/database remain distinct from the hosted edition. GitHub Pages remains the static public demo. [Hosted backend and deployment details](hosted/README.md).
+
+The full repository suite now has **72 passing tests**. Docker packaging was corrected to include `work-engine.mjs`, the offline page and web manifest; a staged COPY-payload startup test passed. An actual Docker engine was unavailable, so no Docker image build is claimed.
+
 ## Run
 
 Requires **Node.js 24 or newer**. No third-party runtime packages or API keys are needed.

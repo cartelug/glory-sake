@@ -5,6 +5,14 @@
 **Audited baseline:** `19eb0392600f24d146ae9e8a9ede7f78c941583d` on `main`.  
 **Scope:** source audit, current public competitor pages, prior owner blueprints, implementation of two immediately actionable gaps, and an ordered route to a live product.
 
+## Hosting update — published 15 November 2026
+
+The hosted account edition is now deployed at https://glorysake-live.woodsydegu512.chatgpt.site with owner-private access, platform ChatGPT sign-in and persistent D1 storage. Live checks verified HTTP 200 for the API health endpoint (`database: connected`), session boundary, frontend module, homepage and font; the 13 production tables were inspected. A production member profile was not created automatically: the owner must sign in and explicitly complete setup.
+
+The Node self-hosting option remains available with email/password accounts; a Docker COPY omission of the server task module and offline assets was fixed and its assembled payload passed a startup check. The root suite now passes **72 tests**, including cloud-handler and packaging checks.
+
+This removes the missing hosted-account API blocker. It does not establish public availability, custom-domain DNS, phone verification, funded tasks, a money ledger or payment-provider integration. The current hosted edition is private to the owner. The original GitHub Pages site remains a static demo. See [hosted/README.md](../hosted/README.md) for the source/deployment boundary.
+
 ## Implementation update — account work
 
 A subsequent implementation on 15 November adds three server-backed **practice** activities, persistent attempts and submissions, server-side quiz scoring, operator reviews, status filters, pagination, recorded reasons and one appeal with an independent manual reviewer. The member can stay signed in while submitting account activities instead of entering the device-local demo. The original eleven local activities remain separate.
@@ -31,7 +39,7 @@ There is no defensible single completion percentage: a finished public page and 
 | Live funded tasks | Missing |
 | Real wallet accounting | Missing; the API currently returns empty zero balances |
 | Mobile-money collection and payouts | Missing; withdrawals return unavailable |
-| Production operations and final hosting | Not established by this source audit |
+| Hosted account API | Private production deployment verified; public access, custom DNS and full operational readiness remain outstanding |
 
 **Recommended first complete release:** a free-access, Uganda-first sponsored-task pilot with verified accounts, a small funded task catalogue, manual review and a reconciled payout process. This narrows the first release while preserving a clear expansion path. It is a proposal, not a new owner decision or a claim that market approvals exist.
 
@@ -60,7 +68,7 @@ The owner's two earlier PDFs were also read: `GLORYSAKE_Ultimate_Website_Masterp
 - `.github/workflows/checks.yml`: tests/build/artifact upload; it is not a production deployment pipeline.
 - `docs/LAUNCH.md`, `docs/DUSK-RELEASE.md`: explicit remaining launch boundaries.
 
-The audit establishes repository behavior and local test results. It does not establish that `glorysake.com` is registered, configured, serving this commit, or connected to any payment provider. Historical Pages failures are not treated as current deployment evidence.
+The initial source audit established repository behavior and local test results. The later hosting update above adds verified private deployment evidence. It still does not establish that `glorysake.com` is registered/configured or connected to any payment provider. Historical Pages failures are not treated as current deployment evidence.
 
 ## 3. How Bolvah's published model works
 

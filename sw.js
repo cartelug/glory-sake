@@ -1,5 +1,5 @@
 // Only the public practice shell is cached. Never cache account/support/payment APIs.
-const scope=new URL(self.registration.scope).pathname,prefix='glorysake-'+scope.replace(/\W/g,'_')+'-',CACHE=prefix+'20261115-account-work-1';
+const scope=new URL(self.registration.scope).pathname,prefix='glorysake-'+scope.replace(/\W/g,'_')+'-',CACHE=prefix+'20261115-cloud-accounts-1';
 const FILES=['./','./index.html','./offline.html','./styles.css','./site.css','./glow.css','./visuals.css','./app.js','./fx.js','./data.js','./icons.js','./pay.js','./progress.js','./experience.js','./upgrades.js','./activity-content.js','./work-ui.js','./i18n.js','./manifest.webmanifest','./assets/logo-white.png','./assets/logo-dark.png','./assets/favicon.png','./assets/app-icon.svg','./assets/fonts/BrighterSans-Bold.woff2','./assets/fonts/SkyText-Regular.woff2','./assets/fonts/SkyText-Bold.woff2','./assets/fonts/SkyText-Light.woff2'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)));self.skipWaiting();});
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(prefix)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

@@ -33,3 +33,7 @@ See [COMPLETION-PLAN.md](COMPLETION-PLAN.md) for the source-backed Bolvah compar
 ## Server-backed practice workflow — 15 November 2026
 
 The account task/review workflow now persists practice attempts, validated evidence, server-scored quiz outcomes, operator decisions and a single independent appeal. See [ACCOUNT-WORK-RELEASE.md](ACCOUNT-WORK-RELEASE.md). This completes part of the task-record infrastructure, not the funded production task engine: campaign funding, budget reservations, money journals, task entitlements, provider integration and payable credits remain unfinished. Practice approvals have zero cash value.
+
+## Private hosted account service — 15 November 2026
+
+The account edition at https://glorysake-live.woodsydegu512.chatgpt.site has been deployed with persistent D1 tables and ChatGPT sign-in. The API health check and schema were verified; full production member sign-in/onboarding requires the owner's action. The audience is private. This is a separate identity/database from the root Node edition, whose Docker payload was repaired. See [hosted/README.md](../hosted/README.md). No money, public-access, custom-DNS or provider-readiness gate has been relaxed.
