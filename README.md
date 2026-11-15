@@ -19,6 +19,16 @@ npm run build
 
 `npm run build` produces a portable static site in `dist/`. The public website and device-local practice demo work on static hosting, including a GitHub Pages project path. Account creation, login, support delivery and operator functions require the Node server. Static hosting does not create a server or a payment service.
 
+## Account submissions and reviews — 15 November 2026
+
+Signed-in members can now complete three server-backed practice activities at `/#/work`: a survey, image observations and a digital safety quiz. Attempts have immutable task versions, a thirty-minute window and one attempt per activity per East Africa calendar day. Quiz scores are calculated on the server. Submissions, evidence, decisions and appeals persist across devices.
+
+Members follow outcomes at `/#/submissions`. Operators open `/#/reviews` from Operations, leave an approve/reject reason and handle one appeal per rejected submission. Operators cannot review their own work, and appeals of manual decisions require a different operator. These activities do not pay cash or affect any wallet balance.
+
+Startup creates four additive `work_*` tables and immutable-version triggers. Back up an existing database before deploying. Static hosting includes the UI module but cannot run the account API. No test accounts or QA shortcuts are shipped. The build now rejects JavaScript syntax errors before packaging.
+
+Validation: **60 tests passed**, static build passed, and local browser QA followed a member submission through rejection, appeal, independent approval and the member’s final history. Mobile width regression was not repeated for this increment. See [the account-work release notes](docs/ACCOUNT-WORK-RELEASE.md).
+
 ## Completion review — 15 November 2026
 
 The repository now includes personal invite codes with server-recorded signup attribution and private support conversations between members and operators. Member follow-ups reopen resolved requests. Neither feature creates cash rewards or sends external notifications. New SQLite tables are created automatically on startup; back up an existing database before deploying. Existing accounts receive a code when they open Invite friends; old `ref=explore` links are not personal codes.
