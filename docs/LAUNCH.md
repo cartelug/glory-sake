@@ -29,3 +29,7 @@ Live money paths deliberately return unavailable. No funds are accepted or trans
 ## Completion audit — 15 November 2026
 
 See [COMPLETION-PLAN.md](COMPLETION-PLAN.md) for the source-backed Bolvah comparison and ordered implementation plan. Personal invitations now attribute new server accounts without commissions. Signed-in support requests support member/operator replies; guest requests still require an external delivery integration. Replies are available in-app only. Take a database backup before deploying the additive table changes. No live-money readiness gate above has been relaxed.
+
+## Server-backed practice workflow — 15 November 2026
+
+The account task/review workflow now persists practice attempts, validated evidence, server-scored quiz outcomes, operator decisions and a single independent appeal. See [ACCOUNT-WORK-RELEASE.md](ACCOUNT-WORK-RELEASE.md). This completes part of the task-record infrastructure, not the funded production task engine: campaign funding, budget reservations, money journals, task entitlements, provider integration and payable credits remain unfinished. Practice approvals have zero cash value.

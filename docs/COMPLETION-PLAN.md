@@ -5,6 +5,14 @@
 **Audited baseline:** `19eb0392600f24d146ae9e8a9ede7f78c941583d` on `main`.  
 **Scope:** source audit, current public competitor pages, prior owner blueprints, implementation of two immediately actionable gaps, and an ordered route to a live product.
 
+## Implementation update — account work
+
+A subsequent implementation on 15 November adds three server-backed **practice** activities, persistent attempts and submissions, server-side quiz scoring, operator reviews, status filters, pagination, recorded reasons and one appeal with an independent manual reviewer. The member can stay signed in while submitting account activities instead of entering the device-local demo. The original eleven local activities remain separate.
+
+Validation increased from 48 to **60 passing tests**, with a successful static build. Browser QA followed a survey submission → reasoned rejection → member appeal → different-operator approval → final member history. Task versions are immutable; concurrent requests and reviewer races are tested. Details are in [ACCOUNT-WORK-RELEASE.md](ACCOUNT-WORK-RELEASE.md).
+
+The assessment below is the initial audit with these updates applied where relevant. **Funded work, reserved sponsor budgets, real wallet accounting and payouts remain missing.** This is progress on Stage 2 infrastructure, not completion of the Stage 2 live-money acceptance gate.
+
 ## 1. Assessment
 
 Glorysake already has a substantial website and an interactive practice product. It is **not yet a live earning and payout platform**. The largest gap is the backend connecting funded work, verified submissions, money owed and settled payouts. Adding more activity tiles will not close that gap.
@@ -19,6 +27,7 @@ There is no defensible single completion percentage: a finished public page and 
 | Operations | Draft campaigns, support records, announcements and basic audits |
 | Personal invitations | Implemented in this update; persistent signup attribution, no commissions |
 | Support conversations | Implemented in this update; member/operator replies, ownership checks, reopen on member follow-up |
+| Server task/review records | Implemented for three non-paying account activities; funding/ledger integration missing |
 | Live funded tasks | Missing |
 | Real wallet accounting | Missing; the API currently returns empty zero balances |
 | Mobile-money collection and payouts | Missing; withdrawals return unavailable |
@@ -78,9 +87,9 @@ For Glorysake, rewards need their own demonstrable funding source. Do not copy c
 | Currency | Local pricing advertised | Practice amounts remain UGX, even for KE/TZ preferences | Genuine per-country rates/fees; do not relabel UGX amounts as KES/TZS |
 | Activation | Country-priced fee; Uganda 19,000 | Free preview; no activation accepted | Owner access-model decision; paid activation is not required for the proposed pilot |
 | Accounts and sessions | Login/register links | Implemented server identity and sessions | Delivery-backed recovery, verification and operator MFA |
-| Trivia and maths | Demo menu entries | Working local practice | Server question/version rules, attempt IDs, timing, caps, scoring and payable claims |
+| Trivia and maths | Demo menu entries | Local practice plus a server-scored account safety quiz | Broader question pools, production anti-abuse and payable claims |
 | Colour challenge / Fix Tap | Both listed | Colour practice; typing sprint exists, Fix Tap absent | Decide whether Fix Tap adds useful value; specify its own mechanics if retained |
-| Surveys / image review / app review | General task proposition | Local practice submissions | Persistent proof, review decisions, rejection reasons and appeals |
+| Surveys / image review / app review | General task proposition | Survey/image account evidence and reviews now persist; app reviews remain local | Funded campaigns, app-review persistence and payable credits |
 | Video activities | YouTube/TikTok listed | Illustrated lesson with a knowledge check | Approved content, rights, completion validation and funded campaign supply |
 | Click ads / Spotify / paid chat | Listed | Missing | Confirm permitted partner use and reward economics before implementing payable engagement |
 | Streaks, levels and achievements | Not established by inspected pages | Implemented device-local practice | Account persistence and cross-device behavior; never treat local points as money |
@@ -165,7 +174,7 @@ Proposed entities: `task_versions`, `task_attempts`, `claims`, `claim_reviews`, 
 - Start with surveys and image review plus a small server-scored knowledge quiz. Keep the other practice activities available separately.
 - Implement reviewer queue, reasoned approval/rejection, member history and one controlled appeal flow.
 - Make approved claims generate ledger entries atomically. A second approval must not create another reward.
-- Keep account practice and demo identities explicit. Today starting a practice activity from a real account switches to the demo; a completed product must explain or remove that interruption.
+- Keep account practice and demo identities explicit. The separate Account activities path now preserves the signed-in identity; the eleven local games remain explicitly device-local. Funded activities will need the same clarity.
 
 **Done when:** duplicate clicks, concurrent attempts, clock manipulation, retries, reviewer races and exhausted budgets cannot generate duplicate or unfunded payable rewards; members can follow a review and appeal result across devices.
 

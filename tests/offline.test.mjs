@@ -10,6 +10,6 @@ async function worker(){const events=new Map(),stores=new Map(),scope='https://p
  return {request,stores,events};
 }
 test('offline navigation falls back to the cached public practice shell',async()=>{const w=await worker(),r=await w.request('achievements','navigate');assert.equal(r.status,200);assert.equal(await r.text(),'cached ./index.html');});
-test('versioned language and UI modules resolve from the offline cache',async()=>{const w=await worker();for(const path of ['i18n.js?v=20261113','upgrades.js?v=20261113'])assert.match(await(await w.request(path)).text(),/cached/);});
-test('private account and payment APIs are never intercepted by the cache',async()=>{const w=await worker();for(const path of ['api/account','api/wallet','api/support'])assert.equal(await w.request(path),undefined);});
+test('versioned language and UI modules resolve from the offline cache',async()=>{const w=await worker();for(const path of ['i18n.js?v=20261113','upgrades.js?v=20261113','work-ui.js?v=20261115'])assert.match(await(await w.request(path)).text(),/cached/);});
+test('private account and payment APIs are never intercepted by the cache',async()=>{const w=await worker();for(const path of ['api/account','api/wallet','api/support','api/work/tasks','api/work/claims','api/admin/work/claims'])assert.equal(await w.request(path),undefined);});
 test('cache cleanup preserves other applications',async()=>{const w=await worker();w.stores.set('another-app',new Map());w.stores.set('glorysake-_glorysake_-old',new Map());let activated;w.events.get('activate')({waitUntil:p=>activated=p});await activated;assert.ok(w.stores.has('another-app'));assert.ok(!w.stores.has('glorysake-_glorysake_-old'));});
