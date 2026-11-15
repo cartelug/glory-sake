@@ -1,6 +1,6 @@
 FROM node:24-alpine
 WORKDIR /app
-COPY package.json server.mjs index.html *.css *.js ./
+COPY package.json *.mjs index.html offline.html manifest.webmanifest *.css *.js ./
 COPY assets ./assets
 COPY scripts ./scripts
 RUN mkdir -p /app/data && chown -R node:node /app
