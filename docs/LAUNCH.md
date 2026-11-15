@@ -25,3 +25,7 @@ Live money paths deliberately return unavailable. No funds are accepted or trans
 - A static deploy cannot receive support submissions: it shows an explicit service-unavailable message instead of claiming delivery.
 - The generated cafe image is illustrative; no testimonial or real-member claim is made.
 - Asset prompts and ownership notes are in `docs/ASSETS.md`.
+
+## Completion audit — 15 November 2026
+
+See [COMPLETION-PLAN.md](COMPLETION-PLAN.md) for the source-backed Bolvah comparison and ordered implementation plan. Personal invitations now attribute new server accounts without commissions. Signed-in support requests support member/operator replies; guest requests still require an external delivery integration. Replies are available in-app only. Take a database backup before deploying the additive table changes. No live-money readiness gate above has been relaxed.
