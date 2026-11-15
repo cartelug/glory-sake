@@ -19,6 +19,12 @@ npm run build
 
 `npm run build` produces a portable static site in `dist/`. The public website and device-local practice demo work on static hosting, including a GitHub Pages project path. Account creation, login, support delivery and operator functions require the Node server. Static hosting does not create a server or a payment service.
 
+## Completion review — 15 November 2026
+
+The repository now includes personal invite codes with server-recorded signup attribution and private support conversations between members and operators. Member follow-ups reopen resolved requests. Neither feature creates cash rewards or sends external notifications. New SQLite tables are created automatically on startup; back up an existing database before deploying. Existing accounts receive a code when they open Invite friends; old `ref=explore` links are not personal codes.
+
+See [the completion plan and Bolvah comparison](docs/COMPLETION-PLAN.md) for the current feature matrix, remaining live-product dependencies, implementation sequence and acceptance checks. Validation for this update: 48 automated tests and a successful static build; browser spot checks of invite-code prefill and demo boundaries.
+
 ## Dusk upgrade — 13 November 2026
 
 The public site now uses **25 illustrated assets**: six section backgrounds, eight activity glyphs, five level crests and six badges. The production WebPs total about 2.49 MiB; the existing fonts and star-and-bird mark are preserved.
