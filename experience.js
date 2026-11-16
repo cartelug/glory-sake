@@ -1,7 +1,7 @@
-import {icon} from './icons.js?v=20261113';
-import {LEVELS,BADGES,levelFor,streakFor,dayKey,dailyGoals,weeklyPoints} from './progress.js?v=20261113';
+import {icon} from './icons.js?v=20261116';
+import {LEVELS,BADGES,levelFor,streakFor,dayKey,dailyGoals,weeklyPoints} from './progress.js?v=20261116';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export const glyphNames={quiz:'quiz',survey:'survey',images:'image-review',math:'math',color:'colour',learn:'lesson',video:'video','app-review':'app-review',typing:'math',scam:'lesson',local:'quiz'};
+export const glyphNames={quiz:'quiz',survey:'survey',images:'image-review',math:'math',color:'colour',learn:'lesson',video:'video','app-review':'app-review',typing:'math',scam:'lesson',local:'quiz',fixtap:'colour',ads:'image-review',music:'video',clips:'video'};
 export const art=(name,cls='',eager=false)=>`<img class="v-art ${cls}" src="./assets/glyphs/glyph-${name}.webp" alt="" width="256" height="256" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 export const taskArt=t=>art(glyphNames[t.id]||'quiz');
 export const backdrop=(name,eager=false)=>`<img class="v-backdrop" src="./assets/backgrounds/${name}.webp" alt="" width="1600" height="900" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;

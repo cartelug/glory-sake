@@ -21,6 +21,10 @@ Validation increased from 48 to **60 passing tests**, with a successful static b
 
 The assessment below is the initial audit with these updates applied where relevant. **Funded work, reserved sponsor budgets, real wallet accounting and payouts remain missing.** This is progress on Stage 2 infrastructure, not completion of the Stage 2 live-money acceptance gate.
 
+## Bolvah parity update — 16 November 2026
+
+Fix Tap, click ads (Sponsor spotlight), Spotify (Music minute), YouTube/TikTok (Short clips), Chat and Earn (Chat lounge), Free Spin, Marketplace, Content Library and a per-activity income dashboard are now implemented as practice features. See [BOLVAH-PARITY-RELEASE.md](BOLVAH-PARITY-RELEASE.md). The rows below that list these modules as missing are superseded by that release. The activation fee, commissions on activation fees, the staked casino, loans and investments remain out of scope.
+
 ## 1. Assessment
 
 Glorysake already has a substantial website and an interactive practice product. It is **not yet a live earning and payout platform**. The largest gap is the backend connecting funded work, verified submissions, money owed and settled payouts. Adding more activity tiles will not close that gap.

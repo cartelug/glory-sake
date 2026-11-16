@@ -2,6 +2,18 @@
 
 A complete responsive public website and interactive member experience built from the owner's November 2026 masterplan. Original star-and-bird mark and embedded Brighter Sans / Sky Text fonts are preserved. Custom generated hero and community images are optimized and included locally; no external image or font requests are needed.
 
+## Bolvah parity — 16 November 2026 (final preview)
+
+All Bolvah modules that can run safely are now in the product:
+- **Practice activities:** Fix Tap, Sponsor spotlight (click ads), Music minute (Spotify-style) and Short clips (YouTube/TikTok-style).
+- **New pages:** Chat lounge, daily Free spin, Marketplace and Content library.
+- **Dashboard:** an Activity income breakdown with separate activities and games wallets.
+- **Public site:** the homepage has a new section, and the FAQ has three new questions.
+
+There are now 15 activities. The activation fee, fee-based referral commissions, the staked casino, loans and investments were left out on purpose. See [the release notes](docs/BOLVAH-PARITY-RELEASE.md).
+
+Validation: **82 tests passing**, the static build passed, and headless Chrome QA passed at 390 px and 1366 px.
+
 ## Hosted account edition — published 15 November 2026
 
 **Owner-private working site:** https://glorysake-live.woodsydegu512.chatgpt.site
